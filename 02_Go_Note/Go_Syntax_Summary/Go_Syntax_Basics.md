@@ -38,7 +38,6 @@ var x, y int = 1, 2
 var a, b, c = true, 2.5, "hello"
 d, e := 3, 4           // 短声明多变量
 ```
-
 ### 常量 (Constants)
 使用 `const` 关键字声明常量，值在编译时确定且不可修改。
 
@@ -53,6 +52,27 @@ const (
 ### 作用域 (Scope)
 *   **包级作用域**: 在函数外部声明的变量/常量/函数，可在整个包内访问（导出时首字母大写可在包外访问）。
 *   **块级作用域**: 在 `{}` 内部（如函数、if、for 语句块）声明的变量，仅在该块内及其嵌套块内可见。
+
+### 关键字 (Keywords)
+Go 语言有 25 个预定义的、不能用作标识符（如变量名、函数名、类型名等）的关键字。它们构成了语言的基本语法结构。
+
+以下是 Go 语言的完整关键字列表：
+
+*   **声明与定义**: `const`, `var`, `type`, `func`, `package`, `import`
+*   **控制流**:
+    *   `if`, `else`, `switch`, `select`, `case`, `default`
+    *   `for`, `range`, `break`, `continue`, `goto`, `fallthrough`
+*   **并发**: `go`, `chan`
+*   **延迟与返回**: `defer`, `return`
+
+**重要提示**:
+*   `const` 和 `var` 用于声明常量和变量。
+*   `type` 用于定义新类型。
+*   `func` 用于声明函数。
+*   `package` 和 `import` 用于组织和引入代码包。
+*   `go` 启动一个新 goroutine。
+*   `chan` 用于声明通道类型。
+*   `defer` 用于延迟函数调用的执行。
 
 ## 3. 基础数据类型
 
